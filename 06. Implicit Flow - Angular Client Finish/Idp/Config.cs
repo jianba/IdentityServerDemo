@@ -5,6 +5,7 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 using IdentityServer4;
+using Newtonsoft.Json;
 
 namespace Idp
 {
@@ -32,7 +33,7 @@ namespace Idp
 
         public static IEnumerable<Client> GetClients()
         {
-            return new[]
+            var datas =  new[]
             {
                 // client credentials flow client
                 new Client
@@ -133,6 +134,10 @@ namespace Idp
                     }
                 }
             };
+
+            var str = JsonConvert.SerializeObject(datas);
+
+            return datas;
         }
     }
 }

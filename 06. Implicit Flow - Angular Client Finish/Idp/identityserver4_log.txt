@@ -7300,3 +7300,128 @@
 2019-02-20 20:57:12.030 +08:00 [INF] Successful signout callback.
 2019-02-20 20:57:12.035 +08:00 [DBG] No client front-channel iframe urls
 2019-02-20 20:57:12.036 +08:00 [DBG] No client back-channel iframe urls
+2020-04-06 21:29:01.802 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-04-06 21:29:01.859 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-06 21:29:01.863 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-06 21:29:01.863 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2020-04-06 21:29:01.863 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-06 21:29:01.864 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2020-04-06 21:29:01.864 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2020-04-06 21:29:14.080 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-06 21:29:14.095 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2020-04-06 21:29:14.096 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2020-04-06 21:29:14.170 +08:00 [DBG] Login Url: /Account/Login
+2020-04-06 21:29:14.171 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-06 21:29:14.172 +08:00 [DBG] Logout Url: /Account/Logout
+2020-04-06 21:29:14.173 +08:00 [DBG] ConsentUrl Url: /consent
+2020-04-06 21:29:14.173 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-06 21:29:14.174 +08:00 [DBG] Error Url: /home/error
+2020-04-06 21:29:14.174 +08:00 [DBG] Error Id Parameter: errorId
+2020-04-06 21:29:14.204 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-06 21:29:14.209 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-06 21:29:14.211 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-06 21:29:14.215 +08:00 [DBG] Start discovery request
+2020-04-06 21:29:14.327 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-06 21:29:14.338 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-06 21:29:14.339 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-06 21:29:14.344 +08:00 [DBG] Start authorize request
+2020-04-06 21:29:14.356 +08:00 [DBG] No user present in authorize request
+2020-04-06 21:29:14.362 +08:00 [DBG] Start authorize request protocol validation
+2020-04-06 21:29:14.384 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2020-04-06 21:29:14.415 +08:00 [ERR] Invalid scope: default-api
+2020-04-06 21:29:14.422 +08:00 [ERR] Request validation failed
+2020-04-06 21:29:14.447 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"default-api openid profile address email phone","State":"9847485c23854990b79c7e2812748910","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"angular-client","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"default-api openid profile address email phone","state":"9847485c23854990b79c7e2812748910","nonce":"3989e27ec7724e7783fa2a07b93235b4"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-06 21:29:14.506 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":null,"Scopes":"default-api openid profile address email phone","GrantType":"implicit","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUQ5PVOMU84:00000001","TimeStamp":"2020-04-06T13:29:14.0000000Z","ProcessId":22084,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2020-04-06 21:34:26.466 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-04-06 21:34:26.519 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-06 21:34:26.531 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-06 21:34:26.532 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2020-04-06 21:34:26.532 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-06 21:34:26.533 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2020-04-06 21:34:26.533 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2020-04-06 21:35:06.402 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-06 21:35:06.412 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is not allowed
+2020-04-06 21:35:06.414 +08:00 [WRN] CorsPolicyService did not allow origin: http://localhost:4200
+2020-04-06 21:35:06.461 +08:00 [DBG] Login Url: /Account/Login
+2020-04-06 21:35:06.461 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-06 21:35:06.462 +08:00 [DBG] Logout Url: /Account/Logout
+2020-04-06 21:35:06.463 +08:00 [DBG] ConsentUrl Url: /consent
+2020-04-06 21:35:06.463 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-06 21:35:06.464 +08:00 [DBG] Error Url: /home/error
+2020-04-06 21:35:06.464 +08:00 [DBG] Error Id Parameter: errorId
+2020-04-06 21:35:06.490 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-06 21:35:06.495 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-06 21:35:06.496 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-06 21:35:06.502 +08:00 [DBG] Start discovery request
+2020-04-06 21:35:31.676 +08:00 [INF] You are using the in-memory version of the persisted grant store. This will store consent decisions, authorization codes, refresh and reference tokens in memory only. If you are using any of those features in production, you want to switch to a different store implementation.
+2020-04-06 21:35:31.728 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2020-04-06 21:35:31.731 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2020-04-06 21:35:31.731 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2020-04-06 21:35:31.732 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2020-04-06 21:35:31.732 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2020-04-06 21:35:31.732 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2020-04-06 21:35:46.727 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-06 21:35:46.738 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2020-04-06 21:35:46.740 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2020-04-06 21:35:46.794 +08:00 [DBG] Login Url: /Account/Login
+2020-04-06 21:35:46.795 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-04-06 21:35:46.798 +08:00 [DBG] Logout Url: /Account/Logout
+2020-04-06 21:35:46.798 +08:00 [DBG] ConsentUrl Url: /consent
+2020-04-06 21:35:46.799 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-04-06 21:35:46.800 +08:00 [DBG] Error Url: /home/error
+2020-04-06 21:35:46.800 +08:00 [DBG] Error Id Parameter: errorId
+2020-04-06 21:35:46.827 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-06 21:35:46.832 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-06 21:35:46.833 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-06 21:35:46.837 +08:00 [DBG] Start discovery request
+2020-04-06 21:35:46.946 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-06 21:35:46.976 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-06 21:35:46.980 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-06 21:35:46.992 +08:00 [DBG] Start authorize request
+2020-04-06 21:35:47.009 +08:00 [DBG] No user present in authorize request
+2020-04-06 21:35:47.018 +08:00 [DBG] Start authorize request protocol validation
+2020-04-06 21:35:47.039 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2020-04-06 21:35:47.070 +08:00 [ERR] Invalid scope: default-api
+2020-04-06 21:35:47.073 +08:00 [ERR] Request validation failed
+2020-04-06 21:35:47.094 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"default-api openid profile address email phone","State":"8835457a647d4bdf96fe3b3ecd7d44c3","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"angular-client","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"default-api openid profile address email phone","state":"8835457a647d4bdf96fe3b3ecd7d44c3","nonce":"bc3ec53d7d8d4b6e9e16431800c37114"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-06 21:35:47.140 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":null,"Scopes":"default-api openid profile address email phone","GrantType":"implicit","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUQ5TKPF4M7:00000001","TimeStamp":"2020-04-06T13:35:47.0000000Z","ProcessId":13936,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2020-04-06 21:36:58.455 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-06 21:36:58.458 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2020-04-06 21:36:58.460 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2020-04-06 21:36:58.460 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-06 21:36:58.464 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-06 21:36:58.469 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-06 21:36:58.470 +08:00 [DBG] Start discovery request
+2020-04-06 21:36:58.491 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-06 21:36:58.493 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-06 21:36:58.510 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-06 21:36:58.512 +08:00 [DBG] Start authorize request
+2020-04-06 21:36:58.514 +08:00 [DBG] No user present in authorize request
+2020-04-06 21:36:58.515 +08:00 [DBG] Start authorize request protocol validation
+2020-04-06 21:36:58.525 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2020-04-06 21:36:58.529 +08:00 [ERR] Invalid scope: default-api
+2020-04-06 21:36:58.532 +08:00 [ERR] Request validation failed
+2020-04-06 21:36:58.533 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"default-api openid profile address email phone","State":"8c1934be2a8a4f8bae115dc6eaf46c07","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"angular-client","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"default-api openid profile address email phone","state":"8c1934be2a8a4f8bae115dc6eaf46c07","nonce":"5cf9f613f72c4d009256b425af2e0630"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-06 21:36:58.541 +08:00 [INF] {"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","Endpoint":"Authorize","SubjectId":null,"Scopes":"default-api openid profile address email phone","GrantType":"implicit","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLUQ5TKPF4M9:00000003","TimeStamp":"2020-04-06T13:36:58.0000000Z","ProcessId":13936,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2020-04-06 21:40:49.729 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:4200
+2020-04-06 21:40:49.732 +08:00 [DBG] Client list checked and origin: http://localhost:4200 is allowed
+2020-04-06 21:40:49.734 +08:00 [DBG] CorsPolicyService allowed origin: http://localhost:4200
+2020-04-06 21:40:49.734 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-04-06 21:40:49.735 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-04-06 21:40:49.736 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-04-06 21:40:49.737 +08:00 [DBG] Start discovery request
+2020-04-06 21:40:49.782 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2020-04-06 21:40:49.784 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2020-04-06 21:40:49.785 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2020-04-06 21:40:49.786 +08:00 [DBG] Start authorize request
+2020-04-06 21:40:49.787 +08:00 [DBG] No user present in authorize request
+2020-04-06 21:40:49.788 +08:00 [DBG] Start authorize request protocol validation
+2020-04-06 21:40:49.788 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2020-04-06 21:40:49.819 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-06 21:40:49.822 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"angular-client","ClientName":"Angular SPA 客户端","RedirectUri":"http://localhost:4200/signin-oidc","AllowedRedirectUris":["http://localhost:4200/signin-oidc","http://localhost:4200/redirect-silentrenew"],"SubjectId":"anonymous","ResponseType":"id_token token","ResponseMode":"fragment","GrantType":"implicit","RequestedScopes":"api1 openid profile address email phone","State":"acd68bf161094fdaa7529a7cfd72b321","UiLocales":null,"Nonce":"3adf9854ef4c48eb885afa835bf7c6f6","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"angular-client","redirect_uri":"http://localhost:4200/signin-oidc","response_type":"id_token token","scope":"api1 openid profile address email phone","state":"acd68bf161094fdaa7529a7cfd72b321","nonce":"3adf9854ef4c48eb885afa835bf7c6f6"},"$type":"AuthorizeRequestValidationLog"}
+2020-04-06 21:40:49.838 +08:00 [INF] Showing login: User is not authenticated
+2020-04-06 21:40:49.915 +08:00 [DBG] Start authorize request protocol validation
+2020-04-06 21:40:49.916 +08:00 [DBG] client configuration validation for client angular-client succeeded.
+2020-04-06 21:40:49.918 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2020-04-06 21:40:49.928 +08:00 [DBG] client configuration validation for client angular-client succeeded.
