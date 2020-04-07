@@ -25,11 +25,11 @@ namespace HybridClient.Controllers
             return View();
         }
 
-        [Authorize(Roles = "管理员,普通用户")]
+        [Authorize(Roles = "Admin,管理员,普通用户")]
         public async Task<IActionResult> AccessApi1()
         {
             var client = new HttpClient();
-            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:44302");
+            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:44304");
             if (disco.IsError)
             {
                 throw new Exception(disco.Error);
@@ -38,7 +38,7 @@ namespace HybridClient.Controllers
             var accessToken = await HttpContext.GetTokenAsync(OpenIdConnectParameterNames.AccessToken);
 
             client.SetBearerToken(accessToken);
-            var response = await client.GetAsync("https://localhost:44302/Test/GetResult");
+            var response = await client.GetAsync("http://localhost:5001/identity");
             if (!response.IsSuccessStatusCode)
             {
                 if (response.StatusCode == HttpStatusCode.Unauthorized)
@@ -81,7 +81,7 @@ namespace HybridClient.Controllers
         public async Task Logout()
         {
             var client = new HttpClient();
-            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:44302");
+            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:44304");
             if (disco.IsError)
             {
                 throw new Exception(disco.Error);
@@ -128,7 +128,7 @@ namespace HybridClient.Controllers
         private async Task<string> RenewTokensAsync()
         {
             var client = new HttpClient();
-            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:44302");
+            var disco = await client.GetDiscoveryDocumentAsync("https://localhost:44304");
             if (disco.IsError)
             {
                 throw new Exception(disco.Error);

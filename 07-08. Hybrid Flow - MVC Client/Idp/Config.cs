@@ -6,6 +6,7 @@ using IdentityServer4.Models;
 using System.Collections.Generic;
 using IdentityModel;
 using IdentityServer4;
+using Newtonsoft.Json;
 
 namespace Idp
 {
@@ -27,18 +28,22 @@ namespace Idp
 
         public static IEnumerable<ApiResource> GetApis()
         {
-            return new ApiResource[]
+            var datas = new ApiResource[]
             {
                 new ApiResource("api1", "My API #1", new List<string> { "location" })
                 {
                     ApiSecrets = { new Secret("api1 secret".Sha256()) }
                 }
             };
+
+            var str = JsonConvert.SerializeObject(datas);
+
+            return datas;
         }
 
         public static IEnumerable<Client> GetClients()
         {
-            return new[]
+            var datas =  new[]
             {
                 // client credentials flow client
                 new Client
@@ -177,6 +182,10 @@ namespace Idp
                     }
                 }
             };
+
+            var str = JsonConvert.SerializeObject(datas);
+
+            return datas;
         }
     }
 }

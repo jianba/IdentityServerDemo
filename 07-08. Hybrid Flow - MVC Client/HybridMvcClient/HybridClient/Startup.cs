@@ -56,7 +56,7 @@ namespace HybridClient
                     options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                     //options.Authority = "http://localhost:5000";
                     //options.RequireHttpsMetadata = false;
-                    options.Authority = "https://localhost:44302";
+                    options.Authority = "https://localhost:44304";
                     options.RequireHttpsMetadata = true;
 
                     options.ClientId = "hybrid client";
@@ -66,7 +66,7 @@ namespace HybridClient
 
                     options.Scope.Clear();
 
-                    options.Scope.Add("default-api");
+                    options.Scope.Add("api1");
                     options.Scope.Add(OidcConstants.StandardScopes.OpenId);
                     options.Scope.Add(OidcConstants.StandardScopes.Profile);
                     options.Scope.Add(OidcConstants.StandardScopes.Email);

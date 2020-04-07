@@ -27,9 +27,9 @@ namespace Api1Resource
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                 .AddIdentityServerAuthentication(options =>
                 {
-                    options.Authority = "http://localhost:5000";
+                    options.Authority = "https://localhost:44304";
                     options.ApiName = "api1";
-                    options.RequireHttpsMetadata = false;
+                    options.RequireHttpsMetadata = true;
                     options.ApiSecret = "api1 secret";
                 });
                 //.AddJwtBearer("Bearer", options =>
